@@ -1,6 +1,6 @@
 package com.fluidfunds.app.security;
 
-import com.fluidfunds.app.service.JWTService;
+import com.fluidfunds.app.service.jwt.JWTService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
