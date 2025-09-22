@@ -16,7 +16,7 @@
 
 HELP.md
 
-src/main/resources/application.properties
+/src/main/resources/application.properties
 
 # Package Files #
 *.jar
