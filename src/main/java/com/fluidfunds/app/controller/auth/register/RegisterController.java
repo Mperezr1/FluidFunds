@@ -1,7 +1,7 @@
-package com.fluidfunds.app.controller.register;
+package com.fluidfunds.app.controller.auth.register;
 
-import com.fluidfunds.app.dto.register.RegisterRequestDTO;
-import com.fluidfunds.app.dto.register.RegisterResponseDTO;
+import com.fluidfunds.app.dto.auth.register.RegisterRequestDTO;
+import com.fluidfunds.app.dto.auth.register.RegisterResponseDTO;
 import com.fluidfunds.app.facade.FluidFundsRegisterFacade;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

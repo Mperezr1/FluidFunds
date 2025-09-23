@@ -1,4 +1,4 @@
-package com.fluidfunds.app.dto.register;
+package com.fluidfunds.app.dto.auth.register;
 
 import com.fluidfunds.app.model.AccountTier;
 import lombok.Builder;

@@ -1,7 +1,7 @@
 package com.fluidfunds.app.facade.impl;
 
-import com.fluidfunds.app.dto.register.RegisterRequestDTO;
-import com.fluidfunds.app.dto.register.RegisterResponseDTO;
+import com.fluidfunds.app.dto.auth.register.RegisterRequestDTO;
+import com.fluidfunds.app.dto.auth.register.RegisterResponseDTO;
 import com.fluidfunds.app.exception.FluidFundsUserAlreadyCreatedException;
 import com.fluidfunds.app.facade.FluidFundsRegisterFacade;
 import com.fluidfunds.app.model.AccountTier;

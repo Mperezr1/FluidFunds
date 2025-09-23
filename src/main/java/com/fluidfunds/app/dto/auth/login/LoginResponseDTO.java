@@ -1,4 +1,4 @@
-package com.fluidfunds.app.dto.login;
+package com.fluidfunds.app.dto.auth.login;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

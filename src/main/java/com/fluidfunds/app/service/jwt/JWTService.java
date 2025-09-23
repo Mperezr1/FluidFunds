@@ -20,16 +20,16 @@ public class JWTService {
     @Value("${jwt.secret}")
     private String SECRET_KEY;
 
-    public String generateToken(UserDetails userDetails) {
-        return generateToken(new HashMap<>(), userDetails);
+    public String generateToken(UserDetails userDetails, int expirationTime) {
+        return generateToken(new HashMap<>(), userDetails, expirationTime);
     }
 
-    public String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
+    public String generateToken(Map<String, Object> extraClaims, UserDetails userDetails, final int expirationTime) {
         return Jwts.builder()
                 .claims(extraClaims)
                 .subject(userDetails.getUsername())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 24))
+                .expiration(new Date(System.currentTimeMillis() + expirationTime))
                 .signWith(getSignInKey())
                 .compact();
     }
